@@ -1,0 +1,96 @@
+language_name: "🇬🇧 English"
+help: |
+  <b>Hello! 👋</b>
+  I add <u>reactions</u> and <u>custom comments</u> to your messages. You can add me to your channel, give me permission to edit messages, and also, you can add me to groups that are connected to your channel.
+
+  • If you want to change all messages or change emojis, press the buttons or use the /channels command to configure. <i>To display channels, you need to first send any message.</i>
+
+  <b>• Do you need help or do you have a suggestion?</b> Write to me: @Real_Coder. Please write in a clear, simple, and understandable manner (Only in Uzbek).
+  <b>• If you like the bot,</b> you can help me via this link: @RealCoderCard
+
+  🧑‍💻 Explore the developer: @RealCoderUz
+menu:
+  channels: "📣 My Channels"
+channels:
+  select: |
+    Select the channel:
+  not_found: |
+    <b>😞 You have not added the bot to any channels</b>
+
+    If you are sure you have given editing permissions, please check and send a message to the channel.
+  updated: |
+    Channel information has been updated!
+  control:
+    info: |
+      Selected channel: <b>${channel.title}</b>
+
+      • What do you want to change?
+    menu:
+      emoji: "${channel.settings.emojis} Emojis"
+      type: "✍️ Where to add?"
+      comments_type: "💬 Comment button"
+      links: "🔗 Link buttons"
+    no_available: |
+      Adding to the channel is not allowed.
+    types:
+      info: |
+        <b>Select when to add the reaction:</b>
+
+        • Always: Reactions will be added to every new message,
+        • Once: Reactions will be added only to the next new message. Then this parameter will change to "Never," and you will need to change its position again.
+        • Never: The bot will never add reactions to messages
+        • Request-based: Starts with !, and then emojis will follow in the end of the message.
+      menu:
+        always: Always
+        one: Once
+        never: Never
+        request: Request-based
+    comments_types:
+      info: |
+        <b>Select where to show comments:</b>
+
+        • Always: The comment button will always be available,
+        • Once: Only the next message will have the comment button. Then this parameter will change to "Never," and you will need to change its position again.
+        • Never: The comment button will not be shown
+      menu:
+        always: Always
+        one: Once
+        never: Never
+    emojis:
+      send_emoji: |
+        <b>Send one or several emojis:</b>
+
+        Current: <code>${channel.settings.emojis}</code>
+        Use one emoji - one button
+    links:
+      send_links: |
+        <b>Send the list of buttons:</b>
+
+        Example:
+        <pre>My website - https://realcoder.uz | Bot About - https://t.me/KingsOfJs
+         Blog - https://t.me/RealCoderUz</pre>
+
+        Send any text to delete.
+
+        <i>Current buttons are represented as follows</i>
+      success: The list of buttons has been changed!
+  back: < Back
+rate:
+  vote:
+    rated: |
+      You rated this ${rateName}
+    back: |
+      You canceled your reaction
+    rated_limit: |
+      ${reactList}
+
+      Descriptions in messages or mailing services will be updated soon.
+wait: |
+  🕒 Comments will be added soon...
+
+  If the deadline has passed, probably the bot was not added to the group.
+error:
+  cant_edited: |
+    <b>😓 Reaction could not be added to the <a href="${postLink}">message</a></b>
+
+    Most likely, I don't have permission to edit messages.

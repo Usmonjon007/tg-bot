@@ -1,0 +1,97 @@
+---
+language_name: "🇺🇿 Oʻzbekcha"
+help: |
+  <b>Salom! 👋</b>
+  Men Sizning xabarlaringizga <u>reaksiyalar</u> va <u>oʻzlashtirilgan izohlar</u> qoʻshaman. Meni kanalingizga qoʻshib, xabarlar tahrirlash ruxsatini berib, shuningdek, meni kanalga bogʻlangan guruhga ham qoʻshishingiz kerak.
+
+  • Agar siz menga barcha xabarlarni oʻzgartirmoqchi boʻlsangiz yoki emoji oʻzgartirishni istasangiz, quyidagi tugmalarni bosing yoki sozlash uchun /channels buyrugʻini yuboring. <i>Kanallarni roʻyhatda koʻrsatish uchun avval biror xabar yuborishingiz kerak.</i>
+
+  <b>• Yordam kerakmi yoki taklifingiz bormi?</b> Menga yozing: @DevMERN. Iltimos, anniq maqsadda va sodda va tushunarli ( Faqat oʻzbek tilida ) yozing.
+  <b>• Bot sizga yoqqan boʻlsa,</b> unda ushbu havola orqali menga yordam berishingiz mumkin : @DDUBTV
+
+  🧑‍💻 Dasturchini kuzating: @DDUBTV
+menu:
+  channels: "📣 Mening kanallarim"
+channels:
+  select: |
+    Kanalni tanlang:
+  not_found: |
+    <b>😞 Siz botni hech qanday kanalga qoʻshmadingiz</b>
+
+    Agar ishonchingiz komil bo'lsa, iltimos, xabarlar tahrirlash ruxsatimning borligiga ishonch hosil qilish uchun tekshiring va kanalga xabar yuboring.
+  updated: |
+    Kanal haqida ma'lumot yangilandi!
+  control:
+    info: |
+      Tanlangan kanal: <b>${channel.title}</b>
+
+      • Nima oʻzgartirmoqchi boʻladingiz?
+    menu:
+      emoji: "${channel.settings.emojis} Emojilar"
+      type: "✍️ Qayerga qoʻshish kerak?"
+      comments_type: "💬 Izoh tugmasi"
+      links: "🔗 Havolalar tugmalari"
+    no_available: |
+      Kanal qoʻshishga ruxsat etilmagan.
+    types:
+      info: |
+        <b>Reaksiyaning qachon qoʻshilishini tanlang:</b>
+
+        • Har doim: Reaksiyalar mumkin bo'lgan har bir xabarga qo'shiladi,
+        • Bitta marta: Reaksiyalar faqatgina yangi xabarga qo'shiladi. Keyin ushbu parametr "hech qachon" ga oʻzgaraadi va siz uning oʻrnini qayta oʻzgartirishingiz kerak bo'ladi
+        • Hech qachon: Bot hech qachon xabarlarga reaksiya qo'shmadi
+        • So'rovga asosan: ! bilan xabarning oxirgi qatori boshlanadi va keyin emoji lar keladi.
+      menu:
+        always: Har doim
+        one: Bitta marta
+        never: Hech qachon
+        request: So'rovga asosan
+    comments_types:
+      info: |
+        <b>Izohlarni qayerda ko'rsatishni tanlang:</b>
+
+        • Har doim: Izoh tugmasi doim ham mavjud bo'ladi,
+        • Bitta marta: Faqat keyingi xabarga izoh tugmasi qo'shiladi. Keyin ushbu parametr "hech qachon" ga oʻzgaraadi va siz uning oʻrnini qayta oʻzgartirishingiz kerak
+        • Hech qachon: Izoh tugmasini ko'rsatmang
+      menu:
+        always: Har doim
+        one: Bitta marta
+        never: Hech qachon
+    emojis:
+      send_emoji: |
+        <b>Bitta yoki bir nechta emojini yuboring:</b>
+
+        Joriy: <code>${channel.settings.emojis}</code>
+        Bir emojidan foydalaning - bir tugma
+    links:
+      send_links: |
+        <b>Tugmalarni ro'yxatini yuboring:</b>
+
+        Misol:
+        <pre>Mening saytim - https://usmonjon.uz | Bot Haqida - https://t.me/ddubtv
+         Blog - https://t.me/DevMERN</pre>
+
+        O'chirish uchun istalgan matn yuboring.
+
+        <i>Joriy tugmalar quyidagi ko'rinishda ko'rsatiladi</i>
+      success: Tugma ro'yxati o'zgartirildi!
+  back: < Ortga
+rate:
+  vote:
+    rated: |
+      Siz bu ${rateName}
+    back: |
+      Siz o'z reaksiyangizni olib qo'ldingiz
+    rated_limit: |
+      ${reactList}
+
+      Xabar yoki pochta xizmatidagi ko'rsatmalar tez orada yangilangan bo'ladi.
+wait: |
+  🕒 Izohlar tez orada qo'yiladi...
+
+  Agar muddat oʻtib ketgan boʻlsa, ehtimol, bot guruhga qoʻshilmagan.
+error:
+  cant_edited: |
+    <b>😓 <a href="${postLink}">Xabarga</a> reaksiya qo'shish muvaffaqiyatli amalga oshirilmadi</b>
+
+    Ehtimol, men xabarlarni tahrirlash ruxsatiga ega emasman.
