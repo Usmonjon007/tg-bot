@@ -11,6 +11,6 @@ app.get("*", (req, res) => {
   });
 });
 
-app.listen(process.env.PORT || 443, () => {
-  console.log(`Server is running on port ${process.env.PORT || 443}`);
+app.listen(process.env.PORT || 9001, () => {
+  console.log(`Server is running on port ${process.env.PORT || 9001}`);
 });

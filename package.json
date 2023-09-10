@@ -1,23 +1,17 @@
 {
-  "name": "ReacomUzBot",
+  "name": "Telegram-Bot",
   "version": "1.0.0",
-  "description": "ReacomUzBot",
+  "description": "Telegram-Bot",
   "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SaidqodirxonUz/reacomuzbot.git"
-  },
-  "author": "SaidqodirxonUz",
+  "author": "Usmonjon Hasanov",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/SaidqodirxonUz/reacomuzbot/issues"
-  },
-  "homepage": "https://github.com/SaidqodirxonUz/reacomuzbot#readme",
   "dependencies": {
     "@pm2/io": "^4.3.3",
     "dotenv": "^8.6.0",

@@ -111,4 +111,4 @@
 # helpers/tdlib/data
 # # node_modules
 node_modules
-# .env
+.env
